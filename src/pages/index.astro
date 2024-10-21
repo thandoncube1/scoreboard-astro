@@ -1,16 +1,52 @@
 ---
-
+import MainLayout from "../layout/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Astro | Counter Application">
+	<header>
+		<img src="/public/imgbin-basketball-sport-slam-dunk-basketball-logo-s-Zk1uKQbrB8TTups3T1pNWK9Mq.jpg" width="45" >
+		<h1 class="mt-5 font-bold text-3xl">Scoreboard Homepage</h1>
+		<nav class="mt-5">
+			<ul>
+				<li class="rounded px-3 py-2 text-sm font-medium"><a href="/">Home</a></li>
+				<li class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"><a href="#">New Game</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="px-5">
+		<h2 class="mt-2 font-semibold pt-4 text-xl border-b-4">Live Games</h2>
+		<section class="grid grid-rows-2 grid-cols-4">
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+		</section>
+	</main>
+</MainLayout>
+
+<style>
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-bottom: 1px solid #ddd;
+		padding: 10px 20px 10px;
+	}
+
+	header > nav > ul {
+		display: flex;
+	}
+
+	header > nav > ul > li {
+		text-decoration: none;
+		list-style: none;
+		margin: 0 20px 0;
+
+	}
+
+	header > nav > ul > li:first-child():hover {
+		color: violet;
+	}
+</style>
