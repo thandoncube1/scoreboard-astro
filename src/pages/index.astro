@@ -1,22 +1,14 @@
 ---
 import MainLayout from "../layout/Layout.astro";
 import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
 ---
 
-<MainLayout title="Astro | Counter Application">
-	<header>
-		<img src="/public/imgbin-basketball-sport-slam-dunk-basketball-logo-s-Zk1uKQbrB8TTups3T1pNWK9Mq.jpg" width="45" >
-		<h1 class="mt-5 font-bold text-3xl">Scoreboard Homepage</h1>
-		<nav class="mt-5">
-			<ul>
-				<li class="rounded px-3 py-2 text-sm font-medium"><a href="/">Home</a></li>
-				<li class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"><a href="#">New Game</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main class="px-5">
-		<h2 class="mt-2 font-semibold pt-4 text-xl border-b-4">Live Games</h2>
-		<section class="grid grid-rows-2 grid-cols-4">
+<MainLayout title="Scoreboard | Astro Application">
+	<Header />
+	<main class="px-5 md:mb-0">
+		<h2 class="mt-2 font-semibold pt-4 text-xl border-b">Live Games</h2>
+		<section class="grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-4 grid-cols-1">
 			<Card />
 			<Card />
 			<Card />
@@ -24,29 +16,7 @@ import Card from "../components/Card.astro";
 			<Card />
 		</section>
 	</main>
+	<section class="px-5 mb-20 md:mb-0">
+		<h2 class="mt-2 font-semibold pt-4 text-xl border-b">News</h2>
+	</section>
 </MainLayout>
-
-<style>
-	header {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		border-bottom: 1px solid #ddd;
-		padding: 10px 20px 10px;
-	}
-
-	header > nav > ul {
-		display: flex;
-	}
-
-	header > nav > ul > li {
-		text-decoration: none;
-		list-style: none;
-		margin: 0 20px 0;
-
-	}
-
-	header > nav > ul > li:first-child():hover {
-		color: violet;
-	}
-</style>
