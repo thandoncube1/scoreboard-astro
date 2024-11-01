@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_0d357224293d76e"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -15,5 +18,17 @@
     "astro": "^4.16.6",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.0",
+    "@storybook/addon-interactions": "^8.4.0",
+    "@storybook/addon-onboarding": "^8.4.0",
+    "@storybook/blocks": "^8.4.0",
+    "@storybook/react": "^8.4.0",
+    "@storybook/react-vite": "^8.4.0",
+    "@storybook/test": "^8.4.0",
+    "chromatic": "^11.16.3",
+    "storybook": "^8.4.0"
   }
 }
