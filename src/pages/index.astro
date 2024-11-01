@@ -6,7 +6,7 @@ import Header from "../components/Header.astro";
 ---
 
 <MainLayout title="Scoreboard | Astro Application">
-	<Header />
+	<div class="main"><Header /></div>
 	<main class="px-5 md:mb-0">
 		<h2 class="mt-2 font-semibold pt-4 text-xl border-b">Live Games</h2>
 		<section class="grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-4 grid-cols-1">
@@ -21,3 +21,18 @@ import Header from "../components/Header.astro";
 		<h2 class="mt-2 font-semibold pt-4 text-xl border-b">News</h2>
 	</section>
 </MainLayout>
+
+<style>
+	div.main {
+		padding: 0 0 80px;
+		display: flex;
+		width: 100%;
+		background-color: #ffffff;
+	}
+
+	@media (max-width: 576px) {
+		div.main {
+			padding: 0 0 60px;
+		}
+	}
+</style>
