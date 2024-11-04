@@ -26,3 +26,15 @@ cron.schedule("0 5 * * *", async () => {
     scheduled: true,
     timezone
 });
+
+cron.schedule("30 5 * * *", async () => {
+    try {
+        const result = await scrapeNBAGameStats(formattedDate);
+        createLogs(result);
+    } catch (error) {
+        createLogs(error);
+    };
+}, {
+    scheduled: true,
+    timezone
+});
