@@ -7,8 +7,12 @@ import Header from "../components/Header.astro";
 
 <MainLayout title="Scoreboard | Astro Application">
 	<div class="main"><Header /></div>
-	<main class="px-5 md:mb-0">
-		<h2 class="mt-2 font-semibold pt-4 text-xl border-b">Live Games</h2>
+	<main class="md:mb-0">
+		<!-- IFrame would need to be placed in a container -->
+		 <!-- Once everything is in order, data is pushed to the database. -->
+		<iframe src="https://ca.global.nba.com/articles/licensee_widget_scoreboard_sib3_v2.html" name="nba-scoreboard-widget" title="Scoreboard Widget" class="w-full mt-1" scrolling="no"></iframe>
+
+		<h2 class="font-semibold pt-4 text-xl border-b">Live Games</h2>
 		<section class="grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-4 grid-cols-1">
 			<Card />
 			<Card />
