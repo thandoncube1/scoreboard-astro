@@ -1,7 +1,6 @@
 import puppeteer from "npm:puppeteer";
-import { saveFileData } from "./util/helper.js";
 
-const scrapeNBAGameStats = async (date) => {
+export const scrapeNBAGameStats = async (date) => {
     // Setup Constants for the Scraper
     const url = 'https://www.nba.com/games?date='
 
@@ -67,8 +66,8 @@ const scrapeNBAGameStats = async (date) => {
     return {nbaGames: games};
 }
 
-
-const scrapeNBAGameDetails = async (date) => {
+// Grab all game details from each page
+export const scrapeNBAGameDetails = async (date) => {
     // Get url data from the main page
     const url = `https://www.nba.com/games?date=${date}`;
 
@@ -115,6 +114,12 @@ const scrapeNBAGameDetails = async (date) => {
 
         const awayTeamName = document.querySelectorAll(".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td")[0]
 
+        const Q1_ay = document.querySelectorAll(".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td:nth-child(2)")[0]
+        const Q2_ay = document.querySelectorAll(".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td:nth-child(3)")[0]
+        const Q3_ay = document.querySelectorAll(".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td:nth-child(4)")[0]
+        const Q4_ay = document.querySelectorAll(".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td:nth-child(5)")[0]
+        const FINAL_ay = document.querySelectorAll(".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td:nth-child(6)")[0]
+
         return {
           title: document.title,
           url: window.location.href,
@@ -131,7 +136,14 @@ const scrapeNBAGameDetails = async (date) => {
               }
           },
           awayTeam: {
-              name: awayTeamName?.textContent
+              name: awayTeamName?.textContent,
+              lineScores: {
+                fst_quarter: Q1_ay?.textContent,
+                snd_quarter: Q2_ay?.textContent,
+                trd_quarter: Q3_ay?.textContent,
+                fth_quarter: Q4_ay?.textContent,
+                final: FINAL_ay?.textContent
+            }
           }
         };
       });
@@ -140,22 +152,8 @@ const scrapeNBAGameDetails = async (date) => {
       gameDetails.push(gameInfo);
     }
 
-    console.log(gameDetails);
+    // console.log(gameDetails);
 
     await browser.close();
-    // return gameDetails;
+    return gameDetails;
 }
-
-const date = "2024-11-02";
-
-// scrapeNBAGameStats(date)
-scrapeNBAGameDetails(date)
-    .then(result => {
-        // Create a .json file with the structure similar
-        // const save = saveFileData('./data/data-games', result, date);
-        const save = "";
-        console.log({ save, results: result });
-    })
-    .catch(error => {
-        console.error(error);
-    });
