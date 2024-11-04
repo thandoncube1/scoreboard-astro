@@ -2,41 +2,55 @@
 import MainLayout from "../layout/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
-
+import Scoreboard from "../components/embed/scoreboard.astro";
+import MobileNav from "../components/MobileNav.astro";
+import Article from "../components/Article.astro";
 ---
 
-<MainLayout title="Scoreboard | Astro Application">
-	<div class="main"><Header /></div>
-	<main class="md:mb-0">
-		<!-- IFrame would need to be placed in a container -->
-		 <!-- Once everything is in order, data is pushed to the database. -->
-		<iframe src="https://ca.global.nba.com/articles/licensee_widget_scoreboard_sib3_v2.html" name="nba-scoreboard-widget" title="Scoreboard Widget" class="w-full mt-1" scrolling="no"></iframe>
+<MainLayout title=`ScoreTracker | Homepage`>
+    <div class="main"><Header /></div>
+	<Scoreboard />
+    <section class="grid md:grid md:grid-cols-5 lg:grid-cols-5">
+        <aside class="sm:hidden lg:aside lg:w-full lg:col-span-1 lg:border lg:border-t lg:border-r">
+            <p>This is a side panel</p>
+        </aside>
+        <main class="md:mb-0 col-span-4">
+            <h2 class="px-5 font-semibold pt-4 text-xl border-b">Live Games</h2>
 
-		<h2 class="font-semibold pt-4 text-xl border-b">Live Games</h2>
-		<section class="grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-4 grid-cols-1">
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-		</section>
-	</main>
-	<section class="px-5 mb-20 md:mb-0">
-		<h2 class="mt-2 font-semibold pt-4 text-xl border-b">News</h2>
-	</section>
+            <section
+                class="px-5 grid md:grid-cols-1 md:grid-rows-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1"
+            >
+                <Card />
+                <Card />
+                <Card />
+            </section>
+			<h2 class="px-5 mt-2 font-semibold pt-4 text-xl border-b">News</h2>
+            <section class="px-5 py-5 mb-20 gap-5 md:grid md:grid-cols-1 md:mb-0 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4">
+				<Article />
+				<Article />
+				<Article />
+            </section>
+        </main>
+    </section>
+	<footer class="w-full">
+	</footer>
+	<MobileNav />
 </MainLayout>
 
 <style>
-	div.main {
-		padding: 0 0 80px;
-		display: flex;
-		width: 100%;
-		background-color: #ffffff;
-	}
+    div.main {
+        padding: 0 0 80px;
+        display: flex;
+        width: 100%;
+        background-color: #ffffff;
+    }
 
-	@media (max-width: 576px) {
-		div.main {
-			padding: 0 0 60px;
+    @media (max-width: 576px) {
+        div.main {
+            padding: 0 0 60px;
+        }
+		section > aside.aside {
+			display: hidden;
 		}
-	}
+    }
 </style>

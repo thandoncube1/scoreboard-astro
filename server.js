@@ -1,5 +1,4 @@
 import puppeteer from "npm:puppeteer";
-import { formattedDate, saveFileData } from "./util/helper.js";
 
 export const scrapeNBAGameStats = async (date) => {
     // Setup Constants for the Scraper
@@ -254,7 +253,3 @@ export const scrapeNBAGameDetails = async (date) => {
     await browser.close();
     return gameDetails;
 };
-
-const result = await scrapeNBAGameDetails("2024-11-02");
-const save = saveFileData("./data/data-detail-games", result, formattedDate);
-console.log({ save, result });

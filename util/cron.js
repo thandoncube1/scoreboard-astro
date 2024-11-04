@@ -10,15 +10,16 @@ const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 // Write a log everytime the cron runs
 function createLogs(details) {
     console.log('Cron job executed at: ', new Date().toLocaleString(), " at " + timezone);
-
     fileManager.appendLogs(`Cron job executed at: , ${new Date().toLocaleString()}, at ${timezone} - ${details}`);
 }
 
 // Schedule a cron job to run every minute
 cron.schedule("0 5 * * *", async () => {
     try {
-        const result = await scrapeNBAGameDetails(formattedDate);
-        createLogs(result);
+        const results = await scrapeNBAGameDetails(formattedDate);
+        const save = saveFileData("../data/data-detail-games", results, formattedDate);
+        const processedString = JSON.stringify({save, results}, null, 2);
+        createLogs(processedString);
     } catch (error) {
         createLogs(error);
     };
@@ -29,8 +30,10 @@ cron.schedule("0 5 * * *", async () => {
 
 cron.schedule("30 5 * * *", async () => {
     try {
-        const result = await scrapeNBAGameStats(formattedDate);
-        createLogs(result);
+        const results = await scrapeNBAGameStats(formattedDate);
+        const save = saveFileData("../data/data-stats-games", results, formattedDate);
+        const processedString = JSON.stringify({save, results}, null, 2);
+        createLogs(processedString);
     } catch (error) {
         createLogs(error);
     };
