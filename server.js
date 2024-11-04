@@ -1,4 +1,5 @@
 import puppeteer from "npm:puppeteer";
+import { saveFileData } from "./util/helper.js";
 
 const scrapeNBAGameStats = async (date) => {
     // Setup Constants for the Scraper
@@ -13,12 +14,6 @@ const scrapeNBAGameStats = async (date) => {
         waitUntil: "networkidle0",
         timeout: 30000
     });
-
-    // SELECTOR CONSTANTS
-    const selectors = {
-      gameContainer: ".GameCardMatchup_wrapper__uUdW8",
-      teamContainer: "span.MatchupCardTeamName_teamName__9YaBA"
-    }
 
     console.log(`${url}${date}`);
     await page.waitForSelector(".GameCard_gc__UCI46");
@@ -56,9 +51,6 @@ const scrapeNBAGameStats = async (date) => {
                   ast: game.querySelectorAll(".GameCardLeaders_gclRow__VMSee > td:nth-child(4)")[1].textContent
                 }
               }
-            },
-            gameStatistics: {
-
             }
           })
         );
@@ -66,9 +58,19 @@ const scrapeNBAGameStats = async (date) => {
         return gameData;
     });
 
-    console.log(games);
-
     await browser.close();
+
+    return {nbaGames: games};
 }
 
-scrapeNBAGameStats("2024-11-02");
+const date = "2024-11-02";
+
+scrapeNBAGameStats(date)
+    .then(result => {
+        // Create a .json file with the structure similar
+        const save = saveFileData('./data/data-games', result, date);
+        console.log({save, results: result});
+    })
+    .catch(error => {
+        console.error(error);
+    });
