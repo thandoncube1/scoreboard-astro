@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+    content: [
+        "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+        "./src/components/**/*.{tsx,html,astro,jsx,md,js,mdx}"
+    ],
     theme: {
         screens: {
             sm: "576px",
@@ -12,7 +15,13 @@ export default {
             lg: "1440px",
             // => @media (min-width: 1440px) { ... }
         },
-        extend: {},
+        extend: {
+            colors: {
+                background: "var-(--background)",
+                foreground: "var-(--foreground)",
+                primary: "#B388EB"
+            }
+        },
     },
     plugins: [],
 };
