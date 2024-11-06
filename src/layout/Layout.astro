@@ -1,5 +1,4 @@
 ---
-import MobileNav from '../components/MobileNav.astro';
 interface Props {
 	title: string;
 }
@@ -15,8 +14,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="max-h-full">
 		<slot />
-		<MobileNav />
 	</body>
 </html>

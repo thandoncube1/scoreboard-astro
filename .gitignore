@@ -12,6 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# chrome & pupeteer
+chrome/
+
 
 # environment variables
 .env

@@ -1,46 +1,105 @@
 ---
+interface LineScores {
+    fst_quarter: string;
+    snd_quarter: string;
+    trd_quarter: string;
+    fth_quarter: string;
+    final: string;
+}
 
+interface Team {
+    name: string;
+    lineScores: LineScores;
+}
+
+export interface GameDetailsProps {
+    _uuid: string;
+    title: string;
+    url: string;
+    background_image: string;
+    game_book: string;
+    homeTeam: Team;
+    awayTeam: Team;
+}
+
+const { _uuid, title, url, background_image, game_book, homeTeam, awayTeam } = Astro.props;
 ---
 
 <article class="mt-10">
     <div class="relative max-w-[376px] bg-cover bg-no-repeat">
         <table class="table-auto border border-spacing-3">
-            <thead class="py-8 px-10">
+            <thead class="py-8 px-10 bg-gray-200">
                 <tr
-                    class="border-b border-gray-200 [&>th:last-child]:text-sky-500"
+                    class="border-b text-[0.8em] border-gray-200 [&>th:last-child]:text-slate-700"
                 >
-                    <th></th>
-                    <th class="table-cell px-5 py-3">1</th>
-                    <th class="table-cell px-5 py-3">2</th>
-                    <th class="table-cell px-5 py-3">3</th>
-                    <th class="table-cell px-5 py-3">4</th>
-                    <th class="table-cell px-5 py-3">Total</th>
+                    <th>TEAM</th>
+                    <th class="table-cell px-5 py-3">Q1</th>
+                    <th class="table-cell px-5 py-3">Q2</th>
+                    <th class="table-cell px-5 py-3">Q3</th>
+                    <th class="table-cell px-5 py-3">Q4</th>
+                    <th class="table-cell px-5 py-3">FINAL</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="font-semibold [&>td:nth-child(n+2)]:text-center">
-                    <td class="table-cell px-4 py-4 font-semibold">Worriors</td>
-                    <td>25</td>
-                    <td>25</td>
-                    <td>30</td>
-                    <td></td>
-                    <td>80</td>
+                <tr
+                    class="text-[0.8em] font-semibold [&>td:nth-child(n+2)]:text-center"
+                >
+                    <td class="table-cell px-4 py-4 font-semibold">{homeTeam.name}</td>
+                    <td>{homeTeam.lineScores.fst_quarter}</td>
+                    <td>{homeTeam.lineScores.snd_quarter}</td>
+                    <td>{homeTeam.lineScores.trd_quarter}</td>
+                    <td>{homeTeam.lineScores.fth_quarter}</td>
+                    <td class="final_score">{homeTeam.lineScores.final}</td>
                 </tr>
-                <tr class="font-semibold [&>td:nth-child(n+2)]:text-center">
-                    <td class="table-cell px-4 py-4 font-semibold">Lakers</td>
-                    <td>26</td>
-                    <td>24</td>
-                    <td>26</td>
-                    <td></td>
-                    <td>76</td>
+                <tr
+                    class="text-[0.8em] font-semibold [&>td:nth-child(n+2)]:text-center"
+                >
+                    <td class="table-cell px-4 py-4 font-semibold">{awayTeam.name}</td>
+                    <td>{awayTeam.lineScores.fst_quarter}</td>
+                    <td>{awayTeam.lineScores.snd_quarter}</td>
+                    <td>{awayTeam.lineScores.trd_quarter}</td>
+                    <td>{awayTeam.lineScores.fth_quarter}</td>
+                    <td class="final_score">{awayTeam.lineScores.final}</td>
                 </tr>
             </tbody>
         </table>
         <button
             type="submit"
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-sky-400 bg-fixed opacity-0 transition duration-500 ease-in-out hover:opacity-95"
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gray-400 bg-fixed opacity-0 transition duration-500 ease-in-out hover:opacity-20"
         >
-        <span class="absolute bottom-3 right-3 text-sky-700 px-4 py-2 rounded-lg bg-white bg-opacity-100 font-semibold shadow-sky-900 shadow-md hover:text-sky-500">View Stats</span>
         </button>
     </div>
 </article>
+
+
+<script>
+// Finally the 2 pointer approach application
+document.addEventListener('DOMContentLoaded', e => {
+    e.preventDefault();
+
+    // Array of games
+
+
+    const FinalScores = document.querySelectorAll('.final_score');
+    // Right pointer to move 2 steps until end of array
+    let right = 1;
+    let left = 0;
+    // Two pointer approach
+    while (right < FinalScores.length) {
+        const leftScore = parseInt(FinalScores[left].textContent);
+        const rightScore = parseInt(FinalScores[right].textContent);
+
+        if (leftScore > rightScore) {
+            FinalScores[right].classList.add("text-red-800");
+        } else if (leftScore < rightScore) {
+            FinalScores[left].classList.add("text-red-800");
+        }
+        // Increment by 2
+        right += 2;
+        left += 2;
+    }
+
+    console.log("Done.");
+});
+
+</script>
