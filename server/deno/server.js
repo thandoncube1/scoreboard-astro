@@ -1,4 +1,5 @@
 import puppeteer from "npm:puppeteer";
+import { groupByDate } from "../../util/helper.js";
 
 export const scrapeNBAGameStats = async (date) => {
     // Setup Constants for the Scraper
@@ -116,7 +117,9 @@ export const scrapeNBAGameStats = async (date) => {
 
     await browser.close();
 
-    return { nbaGames: games };
+    // Pass the data in the function
+    const results = groupByDate(games);
+    return results;
 };
 
 // Grab all game details from each page
@@ -249,7 +252,9 @@ export const scrapeNBAGameDetails = async (date) => {
     }
 
     // console.log(gameDetails);
+    // Pass the data in the function
 
     await browser.close();
-    return gameDetails;
+    const results = groupByDate(gameDetails);
+    return results;
 };

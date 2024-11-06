@@ -5,27 +5,39 @@ import Header from "../components/Header.astro";
 import Scoreboard from "../components/embed/scoreboard.astro";
 import MobileNav from "../components/MobileNav.astro";
 import Article from "../components/Article.astro";
+import StackedMenu from "../components/StackedFlyMenu.astro";
+import Notification from "../components/Notification.astro";
+// Get helper function
+import { formattedDate } from "../../util/helper";
+// Get data from the seed file
+import GameDetails from "../../data/data-detail-game.json";
+import type { GameDetailsProps } from "../components/Card.astro";
+
+const GameDetailsList = GameDetails[formattedDate.split(' ')[0]] as GameDetailsProps[];
 ---
 
 <MainLayout title=`ScoreTracker | Homepage`>
     <div class="main"><Header /></div>
 	<Scoreboard />
-    <section class="grid md:grid md:grid-cols-5 lg:grid-cols-5">
-        <aside class="sm:hidden lg:aside lg:w-full lg:col-span-1 lg:border lg:border-t lg:border-r">
-            <p>This is a side panel</p>
+    <section class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
+        <aside class="fixed z-20 h-full bg-white max-w-72 sm:hidden md:hidden lg:aside lg:w-full lg:col-span-1 lg:border lg:border-t lg:border-r">
+            <h3 class="p-5 font-semibold text-lg text-gray-800">More Information</h3>
+            <StackedMenu />
         </aside>
-        <main class="md:mb-0 col-span-4">
-            <h2 class="px-5 font-semibold pt-4 text-xl border-b">Live Games</h2>
-
+        <div class="sm:hidden md:hidden lg:grid lg:grid-cols-1 xl:grid-cols-1"></div>
+        <main class="relative border border-l md:mb-0 col-span-4">
+            <h2 class="px-5 font-semibold pt-4 text-xl border-b text-gray-800">Recent Games &nbsp;&#9000;  {formattedDate.split(' ')[0]}</h2>
+            <!-- Notification at the top of the boards -->
+            <Notification />
             <section
-                class="px-5 grid md:grid-cols-1 md:grid-rows-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1"
+                class="px-5 w-full grid gap-3 md:grid-cols-2 md:grid-rows-2 lg:grid lg:grid-cols-3 xl:grid-cols-4"
             >
-                <Card />
-                <Card />
-                <Card />
+                {GameDetailsList.map(details => (
+						<Card {...details} />
+					))}
             </section>
 			<h2 class="px-5 mt-2 font-semibold pt-4 text-xl border-b">News</h2>
-            <section class="px-5 py-5 mb-20 gap-5 md:grid md:grid-cols-1 md:mb-0 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4">
+            <section class="px-5 py-5 mb-20 gap-5 md:grid md:grid-cols-2 md:mb-0 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4">
 				<Article />
 				<Article />
 				<Article />
@@ -45,7 +57,7 @@ import Article from "../components/Article.astro";
         background-color: #ffffff;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 700px) {
         div.main {
             padding: 0 0 60px;
         }

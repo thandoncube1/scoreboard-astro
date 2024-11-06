@@ -1,5 +1,28 @@
 ---
+interface LineScores {
+    fst_quarter: string;
+    snd_quarter: string;
+    trd_quarter: string;
+    fth_quarter: string;
+    final: string;
+}
 
+interface Team {
+    name: string;
+    lineScores: LineScores;
+}
+
+export interface GameDetailsProps {
+    _uuid: string;
+    title: string;
+    url: string;
+    background_image: string;
+    game_book: string;
+    homeTeam: Team;
+    awayTeam: Team;
+}
+
+const { _uuid, title, url, background_image, game_book, homeTeam, awayTeam } = Astro.props;
 ---
 
 <article class="mt-10">
@@ -18,21 +41,25 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="text-[0.8em] font-semibold [&>td:nth-child(n+2)]:text-center">
-                    <td class="table-cell px-4 py-4 font-semibold">GSW</td>
-                    <td>25</td>
-                    <td>25</td>
-                    <td>30</td>
-                    <td></td>
-                    <td>80</td>
+                <tr
+                    class="text-[0.8em] font-semibold [&>td:nth-child(n+2)]:text-center"
+                >
+                    <td class="table-cell px-4 py-4 font-semibold">{homeTeam.name}</td>
+                    <td>{homeTeam.lineScores.fst_quarter}</td>
+                    <td>{homeTeam.lineScores.snd_quarter}</td>
+                    <td>{homeTeam.lineScores.trd_quarter}</td>
+                    <td>{homeTeam.lineScores.fth_quarter}</td>
+                    <td class="final_score">{homeTeam.lineScores.final}</td>
                 </tr>
-                <tr class="text-[0.8em] font-semibold [&>td:nth-child(n+2)]:text-center">
-                    <td class="table-cell px-4 py-4 font-semibold">LAL</td>
-                    <td>26</td>
-                    <td>24</td>
-                    <td>26</td>
-                    <td></td>
-                    <td>76</td>
+                <tr
+                    class="text-[0.8em] font-semibold [&>td:nth-child(n+2)]:text-center"
+                >
+                    <td class="table-cell px-4 py-4 font-semibold">{awayTeam.name}</td>
+                    <td>{awayTeam.lineScores.fst_quarter}</td>
+                    <td>{awayTeam.lineScores.snd_quarter}</td>
+                    <td>{awayTeam.lineScores.trd_quarter}</td>
+                    <td>{awayTeam.lineScores.fth_quarter}</td>
+                    <td class="final_score">{awayTeam.lineScores.final}</td>
                 </tr>
             </tbody>
         </table>
@@ -43,3 +70,36 @@
         </button>
     </div>
 </article>
+
+
+<script>
+// Finally the 2 pointer approach application
+document.addEventListener('DOMContentLoaded', e => {
+    e.preventDefault();
+
+    // Array of games
+
+
+    const FinalScores = document.querySelectorAll('.final_score');
+    // Right pointer to move 2 steps until end of array
+    let right = 1;
+    let left = 0;
+    // Two pointer approach
+    while (right < FinalScores.length) {
+        const leftScore = parseInt(FinalScores[left].textContent);
+        const rightScore = parseInt(FinalScores[right].textContent);
+
+        if (leftScore > rightScore) {
+            FinalScores[right].classList.add("text-red-800");
+        } else if (leftScore < rightScore) {
+            FinalScores[left].classList.add("text-red-800");
+        }
+        // Increment by 2
+        right += 2;
+        left += 2;
+    }
+
+    console.log("Done.");
+});
+
+</script>

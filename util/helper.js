@@ -1,9 +1,18 @@
 import * as fs from 'node:fs/promises';
 
-
+export function groupByDate(data) {
+  return data.reduce((result, item) => {
+      const date = formattedDate.split(' ')[0];
+      if (!result[date]) {
+          result[date] = [];
+      }
+      result[date].push(item);
+      return result;
+  }, {});
+}
 // Create a .json file and store it on the path
-export const saveFileData = (filepath, information, date) => {
-    const urlPath = `${filepath}-${date}.json`;
+export const saveFileData = (filepath, information) => {
+    const urlPath = `${filepath}.json`;
     const data = JSON.stringify(information);
     const save = fs.writeFile(urlPath, data, 'utf-8', function(error, data) {
             if (error) throw error;
@@ -25,8 +34,8 @@ export class FileManager {
      * @param {string} ext - `File extention` for the new file or existing file
      * @description - The `FileManager` class is used to create and maintain files from creation and probably extended to deletion and update processes in the later stages.
      */
-    constructor(date, filename, ext) {
-      this.filename = `${filename}_${date}.${ext}`;
+    constructor(filename, ext) {
+      this.filename = `${filename}.${ext}`;
     }
 
     async readExistingLogs() {
@@ -89,7 +98,7 @@ const yesterday = new Date(today);
 yesterday.setDate(today.getDate() - 1);
 
 // Format as YYYY-MM-DD (which is what NBA API expects)
-export const formattedDate = yesterday.toISOString().split('T')[0];
+export const formattedDate = yesterday.toLocaleString('sv', { timeZoneName: 'short' });
 
 console.log(formattedDate); // Will output something like "2024-11-03"
 

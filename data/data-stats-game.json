@@ -1,0 +1,634 @@
+{
+    "2024-11-04": [
+        {
+            "_uuid": "d304493e-1f51-4549-b91d-601ac1377302",
+            "homeTeam": "Bucks",
+            "awayTeam": "Cavaliers",
+            "home": {
+                "team": "Bucks",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "114",
+                "gameLeader": {
+                    "name": "Damian Lillard",
+                    "playerInfo": "MIL | #0 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "36",
+                        "reb": "2",
+                        "ast": "7"
+                    }
+                }
+            },
+            "away": {
+                "team": "Cavaliers",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "116",
+                "gameLeader": {
+                    "name": "Darius Garland",
+                    "playerInfo": "CLE | #10 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "39",
+                        "reb": "2",
+                        "ast": "8"
+                    }
+                }
+            },
+            "article": "/game/mil-vs-cle-0022400154"
+        },
+        {
+            "_uuid": "99e666ca-b6df-4efe-bc10-988141c6c5c5",
+            "homeTeam": "Warriors",
+            "awayTeam": "Wizards",
+            "home": {
+                "team": "Warriors",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "125",
+                "gameLeader": {
+                    "name": "Stephen Curry",
+                    "playerInfo": "GSW | #30 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "24",
+                        "reb": "3",
+                        "ast": "6"
+                    }
+                }
+            },
+            "away": {
+                "team": "Wizards",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "112",
+                "gameLeader": {
+                    "name": "Jonas Valančiūnas",
+                    "playerInfo": "WAS | #17 | ",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "16",
+                        "reb": "12",
+                        "ast": "7"
+                    }
+                }
+            },
+            "article": "/game/gsw-vs-was-0022400155"
+        },
+        {
+            "_uuid": "d8c947ce-93db-4434-8c88-f104f34a517a",
+            "homeTeam": "Lakers",
+            "awayTeam": "Pistons",
+            "home": {
+                "team": "Lakers",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "103",
+                "gameLeader": {
+                    "name": "Anthony Davis",
+                    "playerInfo": "LAL | #3 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "37",
+                        "reb": "9",
+                        "ast": "4"
+                    }
+                }
+            },
+            "away": {
+                "team": "Pistons",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "115",
+                "gameLeader": {
+                    "name": "Cade Cunningham",
+                    "playerInfo": "DET | #2 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "17",
+                        "reb": "11",
+                        "ast": "11"
+                    }
+                }
+            },
+            "article": "/game/lal-vs-det-0022400156"
+        },
+        {
+            "_uuid": "25c61cbd-b36f-4f1a-a159-74ad527f016a",
+            "homeTeam": "Celtics",
+            "awayTeam": "Hawks",
+            "home": {
+                "team": "Celtics",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "123",
+                "gameLeader": {
+                    "name": "Jayson Tatum",
+                    "playerInfo": "BOS | #0 | SF",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "28",
+                        "reb": "6",
+                        "ast": "9"
+                    }
+                }
+            },
+            "away": {
+                "team": "Hawks",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "93",
+                "gameLeader": {
+                    "name": "Jalen Johnson",
+                    "playerInfo": "ATL | #1 | PF",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "20",
+                        "reb": "11",
+                        "ast": "4"
+                    }
+                }
+            },
+            "article": "/game/bos-vs-atl-0022400157"
+        },
+        {
+            "_uuid": "a767777b-8e7a-45ce-adc0-ed9c691d13b8",
+            "homeTeam": "Grizzlies",
+            "awayTeam": "Nets",
+            "home": {
+                "team": "Grizzlies",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "104",
+                "gameLeader": {
+                    "name": "Ja Morant",
+                    "playerInfo": "MEM | #12 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "25",
+                        "reb": "5",
+                        "ast": "9"
+                    }
+                }
+            },
+            "away": {
+                "team": "Nets",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "106",
+                "gameLeader": {
+                    "name": "Dennis Schröder",
+                    "playerInfo": "BKN | #17 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "20",
+                        "reb": "2",
+                        "ast": "6"
+                    }
+                }
+            },
+            "article": "/game/mem-vs-bkn-0022400158"
+        },
+        {
+            "_uuid": "6c328ec2-eefd-48d2-b3f7-5a0ab55c781f",
+            "homeTeam": "Kings",
+            "awayTeam": "Heat",
+            "home": {
+                "team": "Kings",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "111",
+                "gameLeader": {
+                    "name": "Domantas Sabonis",
+                    "playerInfo": "SAC | #11 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "16",
+                        "reb": "16",
+                        "ast": "7"
+                    }
+                }
+            },
+            "away": {
+                "team": "Heat",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "110",
+                "gameLeader": {
+                    "name": "Tyler Herro",
+                    "playerInfo": "MIA | #14 | SG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "27",
+                        "reb": "6",
+                        "ast": "3"
+                    }
+                }
+            },
+            "article": "/game/sac-vs-mia-0022400159"
+        },
+        {
+            "_uuid": "415cbefd-04a9-423b-a1da-39df2eb7f7eb",
+            "homeTeam": "Jazz",
+            "awayTeam": "Bulls",
+            "home": {
+                "team": "Jazz",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "135",
+                "gameLeader": {
+                    "name": "John Collins",
+                    "playerInfo": "UTA | #20 | ",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "28",
+                        "reb": "13",
+                        "ast": "5"
+                    }
+                }
+            },
+            "away": {
+                "team": "Bulls",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "126",
+                "gameLeader": {
+                    "name": "Nikola Vučević",
+                    "playerInfo": "CHI | #9 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "23",
+                        "reb": "10",
+                        "ast": "6"
+                    }
+                }
+            },
+            "article": "/game/uta-vs-chi-0022400160"
+        },
+        {
+            "_uuid": "a192f88f-3676-4fc7-b4cb-9a97e1891325",
+            "homeTeam": "Knicks",
+            "awayTeam": "Rockets",
+            "home": {
+                "team": "Knicks",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "97",
+                "gameLeader": {
+                    "name": "Jalen Brunson",
+                    "playerInfo": "NYK | #11 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "29",
+                        "reb": "3",
+                        "ast": "8"
+                    }
+                }
+            },
+            "away": {
+                "team": "Rockets",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "109",
+                "gameLeader": {
+                    "name": "Alperen Sengun",
+                    "playerInfo": "HOU | #28 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "25",
+                        "reb": "14",
+                        "ast": "5"
+                    }
+                }
+            },
+            "article": "/game/nyk-vs-hou-0022400161"
+        },
+        {
+            "_uuid": "0b489119-40a1-4f61-87b3-e5fa5e66a62c",
+            "homeTeam": "Hornets",
+            "awayTeam": "Timberwolves",
+            "home": {
+                "team": "Hornets",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "93",
+                "gameLeader": {
+                    "name": "LaMelo Ball",
+                    "playerInfo": "CHA | #1 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                        "alt": "Default player headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "19",
+                        "reb": "2",
+                        "ast": "2"
+                    }
+                }
+            },
+            "away": {
+                "team": "Timberwolves",
+                "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                "final": "114",
+                "gameLeader": {
+                    "name": "Naz Reid",
+                    "playerInfo": "MIN | #11 | ",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1629675.png",
+                        "alt": "Naz Reid Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "25",
+                        "reb": "9",
+                        "ast": "2"
+                    }
+                }
+            },
+            "article": "/game/cha-vs-min-0022400162"
+        },
+        {
+            "_uuid": "466580e7-1ae3-4cc7-9857-750c522ce963",
+            "homeTeam": "Magic",
+            "awayTeam": "Thunder",
+            "home": {
+                "team": "Magic",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg",
+                "final": "86",
+                "gameLeader": {
+                    "name": "Jalen Suggs",
+                    "playerInfo": "ORL | #4 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1630591.png",
+                        "alt": "Jalen Suggs Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "19",
+                        "reb": "6",
+                        "ast": "6"
+                    }
+                }
+            },
+            "away": {
+                "team": "Thunder",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg",
+                "final": "102",
+                "gameLeader": {
+                    "name": "Shai Gilgeous-Alexander",
+                    "playerInfo": "OKC | #2 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1628983.png",
+                        "alt": "Shai Gilgeous-Alexander Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "21",
+                        "reb": "6",
+                        "ast": "9"
+                    }
+                }
+            },
+            "article": "/game/orl-vs-okc-0022400163"
+        },
+        {
+            "_uuid": "bad1518a-a780-4eb7-aa2c-d89047fcdccf",
+            "homeTeam": "Trail Blazers",
+            "awayTeam": "Pelicans",
+            "home": {
+                "team": "Trail Blazers",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg",
+                "final": "118",
+                "gameLeader": {
+                    "name": "Deandre Ayton",
+                    "playerInfo": "POR | #2 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1629028.png",
+                        "alt": "Deandre Ayton Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "19",
+                        "reb": "13",
+                        "ast": "0"
+                    }
+                }
+            },
+            "away": {
+                "team": "Pelicans",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg",
+                "final": "100",
+                "gameLeader": {
+                    "name": "Brandon Ingram",
+                    "playerInfo": "NOP | #14 | SF",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1627742.png",
+                        "alt": "Brandon Ingram Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "27",
+                        "reb": "5",
+                        "ast": "7"
+                    }
+                }
+            },
+            "article": "/game/por-vs-nop-0022400164"
+        },
+        {
+            "_uuid": "7fc5047e-fae2-4bc9-bd44-d4a7af7b924f",
+            "homeTeam": "Pacers",
+            "awayTeam": "Mavericks",
+            "home": {
+                "team": "Pacers",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg",
+                "final": "134",
+                "gameLeader": {
+                    "name": "Myles Turner",
+                    "playerInfo": "IND | #33 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1626167.png",
+                        "alt": "Myles Turner Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "30",
+                        "reb": "11",
+                        "ast": "0"
+                    }
+                }
+            },
+            "away": {
+                "team": "Mavericks",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg",
+                "final": "127",
+                "gameLeader": {
+                    "name": "Luka Dončić",
+                    "playerInfo": "DAL | #77 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1629029.png",
+                        "alt": "Luka Dončić Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "34",
+                        "reb": "7",
+                        "ast": "15"
+                    }
+                }
+            },
+            "article": "/game/ind-vs-dal-0022400165"
+        },
+        {
+            "_uuid": "c4fb28bd-a246-4aef-b952-814bc8263a02",
+            "homeTeam": "Raptors",
+            "awayTeam": "Nuggets",
+            "home": {
+                "team": "Raptors",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg",
+                "final": "119",
+                "gameLeader": {
+                    "name": "Jakob Pöltl",
+                    "playerInfo": "TOR | #19 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1627751.png",
+                        "alt": "Jakob Pöltl Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "24",
+                        "reb": "11",
+                        "ast": "3"
+                    }
+                }
+            },
+            "away": {
+                "team": "Nuggets",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg",
+                "final": "121",
+                "gameLeader": {
+                    "name": "Nikola Jokić",
+                    "playerInfo": "DEN | #15 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/203999.png",
+                        "alt": "Nikola Jokić Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "28",
+                        "reb": "14",
+                        "ast": "13"
+                    }
+                }
+            },
+            "article": "/game/tor-vs-den-0022400166"
+        },
+        {
+            "_uuid": "38b00754-e038-4628-ae02-b8f9444a732a",
+            "homeTeam": "76ers",
+            "awayTeam": "Suns",
+            "home": {
+                "team": "76ers",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg",
+                "final": "116",
+                "gameLeader": {
+                    "name": "Tyrese Maxey",
+                    "playerInfo": "PHI | #0 | PG",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1630178.png",
+                        "alt": "Tyrese Maxey Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "32",
+                        "reb": "3",
+                        "ast": "2"
+                    }
+                }
+            },
+            "away": {
+                "team": "Suns",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg",
+                "final": "118",
+                "gameLeader": {
+                    "name": "Kevin Durant",
+                    "playerInfo": "PHX | #35 | PF",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/201142.png",
+                        "alt": "Kevin Durant Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "35",
+                        "reb": "4",
+                        "ast": "6"
+                    }
+                }
+            },
+            "article": "/game/phi-vs-phx-0022400167"
+        },
+        {
+            "_uuid": "6291f098-1e83-4eb9-b417-c76beadfff2c",
+            "homeTeam": "Spurs",
+            "awayTeam": "Clippers",
+            "home": {
+                "team": "Spurs",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg",
+                "final": "104",
+                "gameLeader": {
+                    "name": "Victor Wembanyama",
+                    "playerInfo": "SAS | #1 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1641705.png",
+                        "alt": "Victor Wembanyama Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "24",
+                        "reb": "13",
+                        "ast": "3"
+                    }
+                }
+            },
+            "away": {
+                "team": "Clippers",
+                "teamLogo": "https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg",
+                "final": "113",
+                "gameLeader": {
+                    "name": "Ivica Zubac",
+                    "playerInfo": "LAC | #40 | C",
+                    "image": {
+                        "src": "https://cdn.nba.com/headshots/nba/latest/260x190/1627826.png",
+                        "alt": "Ivica Zubac Headshot"
+                    },
+                    "leaderStats": {
+                        "pts": "17",
+                        "reb": "13",
+                        "ast": "4"
+                    }
+                }
+            },
+            "article": "/game/sas-vs-lac-0022400168"
+        }
+    ]
+}
