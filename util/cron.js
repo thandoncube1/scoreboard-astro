@@ -16,7 +16,8 @@ function createLogs(details) {
 // Schedule a cron job to run every minute
 cron.schedule("0 5 * * *", async () => {
     try {
-        const results = await scrapeNBAGameDetails(formattedDate);
+        const date = formattedDate.split(' ')[0];
+        const results = await scrapeNBAGameDetails(date);
         const save = saveFileData("../data/data-detail-games", results);
         const processedString = JSON.stringify({save, results}, null, 2);
         createLogs(processedString);
@@ -30,7 +31,8 @@ cron.schedule("0 5 * * *", async () => {
 
 cron.schedule("30 5 * * *", async () => {
     try {
-        const results = await scrapeNBAGameStats(formattedDate);
+        const date = formattedDate.split(' ')[0];
+        const results = await scrapeNBAGameStats(date);
         const save = saveFileData("../data/data-stats-games", results);
         const processedString = JSON.stringify({save, results}, null, 2);
         createLogs(processedString);

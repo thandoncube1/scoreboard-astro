@@ -1,407 +1,299 @@
 {
-    "2024-11-04": [
+    "2024-11-10": [
         {
-            "_uuid": "71a9fc8e-d6df-4f51-9433-fcb66a51796a",
-            "title": "Milwaukee Bucks vs Cleveland Cavaliers Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/mil-vs-cle-0022400154",
+            "_uuid": "12d41dc5-76ee-4f81-96f6-14904988968c",
+            "title": "Houston Rockets vs Detroit Pistons Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/hou-vs-det-0022400201",
             "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_MILCLE_book.pdf",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_HOUDET_book.pdf",
             "homeTeam": {
-                "name": "MIL",
-                "lineScores": {
-                    "fst_quarter": "31",
-                    "snd_quarter": "29",
-                    "trd_quarter": "31",
-                    "fth_quarter": "23",
-                    "final": "114"
-                }
-            },
-            "awayTeam": {
-                "name": "CLE",
-                "lineScores": {
-                    "fst_quarter": "35",
-                    "snd_quarter": "38",
-                    "trd_quarter": "16",
-                    "fth_quarter": "27",
-                    "final": "116"
-                }
-            }
-        },
-        {
-            "_uuid": "4504d4e1-3314-443b-a9bc-5a70a728e912",
-            "title": "Golden State Warriors vs Washington Wizards Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/gsw-vs-was-0022400155",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_GSWWAS_book.pdf",
-            "homeTeam": {
-                "name": "GSW",
-                "lineScores": {
-                    "fst_quarter": "29",
-                    "snd_quarter": "25",
-                    "trd_quarter": "39",
-                    "fth_quarter": "32",
-                    "final": "125"
-                }
-            },
-            "awayTeam": {
-                "name": "WAS",
+                "name": "HOU",
                 "lineScores": {
                     "fst_quarter": "20",
-                    "snd_quarter": "25",
-                    "trd_quarter": "36",
-                    "fth_quarter": "31",
-                    "final": "112"
-                }
-            }
-        },
-        {
-            "_uuid": "57f777b5-26dc-4648-9452-a60a3ddaf5f9",
-            "title": "Los Angeles Lakers vs Detroit Pistons Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/lal-vs-det-0022400156",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_LALDET_book.pdf",
-            "homeTeam": {
-                "name": "LAL",
-                "lineScores": {
-                    "fst_quarter": "22",
-                    "snd_quarter": "31",
-                    "trd_quarter": "24",
-                    "fth_quarter": "26",
-                    "final": "103"
+                    "snd_quarter": "23",
+                    "trd_quarter": "29",
+                    "fth_quarter": "29",
+                    "final": "101"
                 }
             },
             "awayTeam": {
                 "name": "DET",
                 "lineScores": {
-                    "fst_quarter": "33",
-                    "snd_quarter": "34",
-                    "trd_quarter": "16",
-                    "fth_quarter": "32",
-                    "final": "115"
+                    "fst_quarter": "17",
+                    "snd_quarter": "28",
+                    "trd_quarter": "19",
+                    "fth_quarter": "35",
+                    "final": "99"
                 }
             }
         },
         {
-            "_uuid": "fd7357fd-ddc9-40b3-94af-1713be33219c",
-            "title": "Boston Celtics vs Atlanta Hawks Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/bos-vs-atl-0022400157",
+            "_uuid": "34fc4b8e-620e-45ee-92fc-0cbb1955d8f9",
+            "title": "Boston Celtics vs Milwaukee Bucks Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/bos-vs-mil-0022400202",
             "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_BOSATL_book.pdf",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_BOSMIL_book.pdf",
             "homeTeam": {
                 "name": "BOS",
                 "lineScores": {
-                    "fst_quarter": "35",
-                    "snd_quarter": "40",
-                    "trd_quarter": "28",
-                    "fth_quarter": "20",
-                    "final": "123"
-                }
-            },
-            "awayTeam": {
-                "name": "ATL",
-                "lineScores": {
                     "fst_quarter": "30",
-                    "snd_quarter": "23",
-                    "trd_quarter": "22",
-                    "fth_quarter": "18",
-                    "final": "93"
-                }
-            }
-        },
-        {
-            "_uuid": "cde5958d-61f1-47c6-9cd8-e262611710c3",
-            "title": "Memphis Grizzlies vs Brooklyn Nets Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/mem-vs-bkn-0022400158",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_MEMBKN_book.pdf",
-            "homeTeam": {
-                "name": "MEM",
-                "lineScores": {
-                    "fst_quarter": "30",
-                    "snd_quarter": "19",
-                    "trd_quarter": "30",
-                    "fth_quarter": "25",
-                    "final": "104"
-                }
-            },
-            "awayTeam": {
-                "name": "BKN",
-                "lineScores": {
-                    "fst_quarter": "23",
-                    "snd_quarter": "27",
-                    "trd_quarter": "33",
-                    "fth_quarter": "23",
-                    "final": "106"
-                }
-            }
-        },
-        {
-            "_uuid": "0bc3783d-b46a-4dc9-8193-4dc736350435",
-            "title": "Sacramento Kings vs Miami Heat Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/sac-vs-mia-0022400159",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_SACMIA_book.pdf",
-            "homeTeam": {
-                "name": "SAC",
-                "lineScores": {
-                    "fst_quarter": "22",
-                    "snd_quarter": "26",
-                    "trd_quarter": "37",
+                    "snd_quarter": "28",
+                    "trd_quarter": "29",
                     "fth_quarter": "26",
-                    "final": "111"
+                    "final": "113"
                 }
             },
             "awayTeam": {
-                "name": "MIA",
+                "name": "MIL",
                 "lineScores": {
-                    "fst_quarter": "25",
-                    "snd_quarter": "36",
-                    "trd_quarter": "17",
-                    "fth_quarter": "32",
-                    "final": "110"
+                    "fst_quarter": "40",
+                    "snd_quarter": "29",
+                    "trd_quarter": "15",
+                    "fth_quarter": "23",
+                    "final": "107"
                 }
             }
         },
         {
-            "_uuid": "ec97364d-5b6b-4fa0-9b3f-09c07ef7b3ec",
-            "title": "Utah Jazz vs Chicago Bulls Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/uta-vs-chi-0022400160",
+            "_uuid": "bf6cdbfc-da50-4c45-8c58-1475ff62110d",
+            "title": "New York Knicks vs Indiana Pacers Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/nyk-vs-ind-0022400203",
             "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_UTACHI_book.pdf",
-            "homeTeam": {
-                "name": "UTA",
-                "lineScores": {
-                    "fst_quarter": "30",
-                    "snd_quarter": "32",
-                    "trd_quarter": "33",
-                    "fth_quarter": "40",
-                    "final": "135"
-                }
-            },
-            "awayTeam": {
-                "name": "CHI",
-                "lineScores": {
-                    "fst_quarter": "27",
-                    "snd_quarter": "26",
-                    "trd_quarter": "40",
-                    "fth_quarter": "33",
-                    "final": "126"
-                }
-            }
-        },
-        {
-            "_uuid": "7516860e-8524-459f-b002-e7e3bb0c89e2",
-            "title": "New York Knicks vs Houston Rockets Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/nyk-vs-hou-0022400161",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_NYKHOU_book.pdf",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_NYKIND_book.pdf",
             "homeTeam": {
                 "name": "NYK",
                 "lineScores": {
                     "fst_quarter": "26",
-                    "snd_quarter": "30",
-                    "trd_quarter": "19",
-                    "fth_quarter": "22",
-                    "final": "97"
+                    "snd_quarter": "35",
+                    "trd_quarter": "33",
+                    "fth_quarter": "27",
+                    "final": "121"
                 }
             },
             "awayTeam": {
-                "name": "HOU",
+                "name": "IND",
                 "lineScores": {
-                    "fst_quarter": "31",
-                    "snd_quarter": "30",
-                    "trd_quarter": "20",
-                    "fth_quarter": "28",
-                    "final": "109"
-                }
-            }
-        },
-        {
-            "_uuid": "e549c53a-0191-4e07-b8fc-d486669a1ce6",
-            "title": "Charlotte Hornets vs Minnesota Timberwolves Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/cha-vs-min-0022400162",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_CHAMIN_book.pdf",
-            "homeTeam": {
-                "name": "CHA",
-                "lineScores": {
-                    "fst_quarter": "24",
-                    "snd_quarter": "21",
-                    "trd_quarter": "26",
-                    "fth_quarter": "22",
-                    "final": "93"
-                }
-            },
-            "awayTeam": {
-                "name": "MIN",
-                "lineScores": {
-                    "fst_quarter": "24",
-                    "snd_quarter": "33",
+                    "fst_quarter": "29",
+                    "snd_quarter": "29",
                     "trd_quarter": "34",
-                    "fth_quarter": "23",
-                    "final": "114"
+                    "fth_quarter": "40",
+                    "final": "132"
                 }
             }
         },
         {
-            "_uuid": "36609e9c-484b-4c35-8e3d-c0be4125d043",
-            "title": "Orlando Magic vs Oklahoma City Thunder Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/orl-vs-okc-0022400163",
+            "_uuid": "5595e650-290b-494a-9e2c-1403293060a2",
+            "title": "Washington Wizards vs Orlando Magic Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/was-vs-orl-0022400204",
             "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_ORLOKC_book.pdf",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_WASORL_book.pdf",
             "homeTeam": {
+                "name": "WAS",
+                "lineScores": {
+                    "fst_quarter": "22",
+                    "snd_quarter": "34",
+                    "trd_quarter": "16",
+                    "fth_quarter": "22",
+                    "final": "94"
+                }
+            },
+            "awayTeam": {
                 "name": "ORL",
                 "lineScores": {
                     "fst_quarter": "26",
-                    "snd_quarter": "17",
-                    "trd_quarter": "15",
-                    "fth_quarter": "28",
-                    "final": "86"
-                }
-            },
-            "awayTeam": {
-                "name": "OKC",
-                "lineScores": {
-                    "fst_quarter": "39",
-                    "snd_quarter": "19",
-                    "trd_quarter": "26",
-                    "fth_quarter": "18",
-                    "final": "102"
-                }
-            }
-        },
-        {
-            "_uuid": "c43799d9-1c17-478f-b2de-3486276b03fb",
-            "title": "Portland Trail Blazers vs New Orleans Pelicans Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/por-vs-nop-0022400164",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_PORNOP_book.pdf",
-            "homeTeam": {
-                "name": "POR",
-                "lineScores": {
-                    "fst_quarter": "21",
-                    "snd_quarter": "27",
-                    "trd_quarter": "31",
-                    "fth_quarter": "39",
-                    "final": "118"
-                }
-            },
-            "awayTeam": {
-                "name": "NOP",
-                "lineScores": {
-                    "fst_quarter": "30",
-                    "snd_quarter": "25",
-                    "trd_quarter": "27",
-                    "fth_quarter": "18",
-                    "final": "100"
-                }
-            }
-        },
-        {
-            "_uuid": "ec73040e-6cba-4081-a593-9ed8dd709809",
-            "title": "Indiana Pacers vs Dallas Mavericks Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/ind-vs-dal-0022400165",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_INDDAL_book.pdf",
-            "homeTeam": {
-                "name": "IND",
-                "lineScores": {
-                    "fst_quarter": "36",
-                    "snd_quarter": "27",
-                    "trd_quarter": "33",
-                    "fth_quarter": "38",
-                    "final": "134"
-                }
-            },
-            "awayTeam": {
-                "name": "DAL",
-                "lineScores": {
-                    "fst_quarter": "29",
-                    "snd_quarter": "30",
-                    "trd_quarter": "36",
-                    "fth_quarter": "32",
-                    "final": "127"
-                }
-            }
-        },
-        {
-            "_uuid": "7c300b44-8633-4230-88d5-8c4e7a085b5d",
-            "title": "Toronto Raptors vs Denver Nuggets Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/tor-vs-den-0022400166",
-            "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_TORDEN_book.pdf",
-            "homeTeam": {
-                "name": "TOR",
-                "lineScores": {
-                    "fst_quarter": "37",
-                    "snd_quarter": "27",
-                    "trd_quarter": "29",
-                    "fth_quarter": "26",
-                    "final": "119"
-                }
-            },
-            "awayTeam": {
-                "name": "DEN",
-                "lineScores": {
-                    "fst_quarter": "34",
-                    "snd_quarter": "25",
-                    "trd_quarter": "29",
-                    "fth_quarter": "33",
+                    "snd_quarter": "35",
+                    "trd_quarter": "30",
+                    "fth_quarter": "30",
                     "final": "121"
                 }
             }
         },
         {
-            "_uuid": "c291d36e-d1a4-47ef-9797-b57ea52aa3d7",
-            "title": "Philadelphia 76ers vs Phoenix Suns Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/phi-vs-phx-0022400167",
+            "_uuid": "d3c5e5bc-41e1-486d-9b87-32253f7c7b16",
+            "title": "Golden State Warriors vs Oklahoma City Thunder Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/gsw-vs-okc-0022400207",
             "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_PHIPHX_book.pdf",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_GSWOKC_book.pdf",
             "homeTeam": {
-                "name": "PHI",
+                "name": "GSW",
                 "lineScores": {
                     "fst_quarter": "26",
-                    "snd_quarter": "37",
-                    "trd_quarter": "30",
-                    "fth_quarter": "23",
+                    "snd_quarter": "39",
+                    "trd_quarter": "42",
+                    "fth_quarter": "20",
+                    "final": "127"
+                }
+            },
+            "awayTeam": {
+                "name": "OKC",
+                "lineScores": {
+                    "fst_quarter": "33",
+                    "snd_quarter": "25",
+                    "trd_quarter": "21",
+                    "fth_quarter": "37",
                     "final": "116"
+                }
+            }
+        },
+        {
+            "_uuid": "f0a3c37f-021a-412c-b0f5-f910613d1705",
+            "title": "Miami Heat vs Minnesota Timberwolves Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/mia-vs-min-0022400206",
+            "background_image": "https://cdn.nba.com/next/fallback.jpg",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_MIAMIN_book.pdf",
+            "homeTeam": {
+                "name": "MIA",
+                "lineScores": {
+                    "fst_quarter": "27",
+                    "snd_quarter": "25",
+                    "trd_quarter": "16",
+                    "fth_quarter": "27",
+                    "final": "95"
+                }
+            },
+            "awayTeam": {
+                "name": "MIN",
+                "lineScores": {
+                    "fst_quarter": "20",
+                    "snd_quarter": "31",
+                    "trd_quarter": "20",
+                    "fth_quarter": "23",
+                    "final": "94"
+                }
+            }
+        },
+        {
+            "_uuid": "94c13286-be36-4521-9669-3374b872a3ce",
+            "title": "Charlotte Hornets vs Philadelphia 76ers Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/cha-vs-phi-0022400205",
+            "background_image": "https://cdn.nba.com/next/fallback.jpg",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_CHAPHI_book.pdf",
+            "homeTeam": {
+                "name": "CHA",
+                "lineScores": {
+                    "fst_quarter": "15",
+                    "snd_quarter": "30",
+                    "trd_quarter": "21",
+                    "fth_quarter": "31",
+                    "final": "105"
+                }
+            },
+            "awayTeam": {
+                "name": "PHI",
+                "lineScores": {
+                    "fst_quarter": "16",
+                    "snd_quarter": "30",
+                    "trd_quarter": "30",
+                    "fth_quarter": "21",
+                    "final": "107"
+                }
+            }
+        },
+        {
+            "_uuid": "9555b9fd-61e8-4c10-a199-faa52c88ca09",
+            "title": "Sacramento Kings vs Phoenix Suns Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/sac-vs-phx-0022400209",
+            "background_image": "https://cdn.nba.com/next/fallback.jpg",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_SACPHX_book.pdf",
+            "homeTeam": {
+                "name": "SAC",
+                "lineScores": {
+                    "fst_quarter": "36",
+                    "snd_quarter": "24",
+                    "trd_quarter": "19",
+                    "fth_quarter": "32",
+                    "final": "127"
                 }
             },
             "awayTeam": {
                 "name": "PHX",
                 "lineScores": {
-                    "fst_quarter": "28",
-                    "snd_quarter": "37",
+                    "fst_quarter": "31",
+                    "snd_quarter": "22",
                     "trd_quarter": "29",
-                    "fth_quarter": "24",
+                    "fth_quarter": "29",
                     "final": "118"
                 }
             }
         },
         {
-            "_uuid": "29b4ce8f-8419-4dbe-bd3f-b32b38bea2ad",
-            "title": "San Antonio Spurs vs LA Clippers Nov 4, 2024 Game Summary | NBA.com",
-            "url": "https://www.nba.com/game/sas-vs-lac-0022400168",
+            "_uuid": "24939111-88c2-4155-a52e-5c53e0570c43",
+            "title": "Dallas Mavericks vs Denver Nuggets Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/dal-vs-den-0022400208",
             "background_image": "https://cdn.nba.com/next/fallback.jpg",
-            "game_book": "https://statsdmz.nba.com/pdfs/20241104/20241104_SASLAC_book.pdf",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_DALDEN_book.pdf",
             "homeTeam": {
-                "name": "SAS",
+                "name": "DAL",
                 "lineScores": {
-                    "fst_quarter": "40",
-                    "snd_quarter": "16",
-                    "trd_quarter": "30",
-                    "fth_quarter": "18",
-                    "final": "104"
+                    "fst_quarter": "29",
+                    "snd_quarter": "34",
+                    "trd_quarter": "31",
+                    "fth_quarter": "26",
+                    "final": "120"
                 }
             },
             "awayTeam": {
-                "name": "LAC",
+                "name": "DEN",
                 "lineScores": {
-                    "fst_quarter": "14",
-                    "snd_quarter": "34",
-                    "trd_quarter": "34",
-                    "fth_quarter": "31",
-                    "final": "113"
+                    "fst_quarter": "35",
+                    "snd_quarter": "25",
+                    "trd_quarter": "37",
+                    "fth_quarter": "25",
+                    "final": "122"
+                }
+            }
+        },
+        {
+            "_uuid": "d6f7bbad-fd37-486f-975b-4a6098f7f795",
+            "title": "Memphis Grizzlies vs Portland Trail Blazers Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/mem-vs-por-0022400210",
+            "background_image": "https://cdn.nba.com/next/fallback.jpg",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_MEMPOR_book.pdf",
+            "homeTeam": {
+                "name": "MEM",
+                "lineScores": {
+                    "fst_quarter": "31",
+                    "snd_quarter": "33",
+                    "trd_quarter": "42",
+                    "fth_quarter": "28",
+                    "final": "134"
+                }
+            },
+            "awayTeam": {
+                "name": "POR",
+                "lineScores": {
+                    "fst_quarter": "17",
+                    "snd_quarter": "27",
+                    "trd_quarter": "24",
+                    "fth_quarter": "21",
+                    "final": "89"
+                }
+            }
+        },
+        {
+            "_uuid": "e2ea95bd-1bdb-4930-94f0-3aeb30de999d",
+            "title": "Toronto Raptors vs Los Angeles Lakers Nov 10, 2024 Game Summary | NBA.com",
+            "url": "https://www.nba.com/game/tor-vs-lal-0022400211",
+            "background_image": "https://cdn.nba.com/next/fallback.jpg",
+            "game_book": "https://statsdmz.nba.com/pdfs/20241110/20241110_TORLAL_book.pdf",
+            "homeTeam": {
+                "name": "TOR",
+                "lineScores": {
+                    "fst_quarter": "34",
+                    "snd_quarter": "21",
+                    "trd_quarter": "27",
+                    "fth_quarter": "21",
+                    "final": "103"
+                }
+            },
+            "awayTeam": {
+                "name": "LAL",
+                "lineScores": {
+                    "fst_quarter": "26",
+                    "snd_quarter": "27",
+                    "trd_quarter": "35",
+                    "fth_quarter": "35",
+                    "final": "123"
                 }
             }
         }
