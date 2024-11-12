@@ -2,7 +2,7 @@
 import { scrapeNBAGameDetails, scrapeNBAGameStats } from "../server/deno/server.js";
 import { formattedDate, saveFileData, FileManager } from "./helper.js"
 
-const date = formattedDate.split('T')[0];
+const date = formattedDate.split(' ')[0];
 
 const results = await scrapeNBAGameStats(date);
 
