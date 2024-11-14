@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', e => {
         const leftScore = parseInt(FinalScores[left].textContent);
         const rightScore = parseInt(FinalScores[right].textContent);
 
-        if (leftScore > rightScore) {
+        if (leftScore < rightScore) {
             FinalScores[right].classList.add("text-red-800");
-        } else if (leftScore < rightScore) {
+        } else if (leftScore > rightScore) {
             FinalScores[left].classList.add("text-red-800");
         }
         // Increment by 2
