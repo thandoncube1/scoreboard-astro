@@ -27,3 +27,5 @@ chrome/
 .idea/
 
 *storybook.log
+
+.env.local

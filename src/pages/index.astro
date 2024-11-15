@@ -13,7 +13,7 @@ import { formattedDate } from "../../util/helper";
 import GameDetails from "../../data/data-detail-game.json";
 import type { GameDetailsProps } from "../components/Card.astro";
 
-const GameDetailsList = GameDetails[formattedDate.split(' ')[0]] as GameDetailsProps[];
+const GameDetailsList = GameDetails as GameDetailsProps[];
 ---
 
 <MainLayout title=`ScoreTracker | Homepage`>
