@@ -22,14 +22,24 @@ export const saveFileData = async (filepath, information) => {
 
     try {
         const info = await source;
-        const parseDataSource = JSON.parse(info);
-        console.log(parseDataSource);
-        // Update the data source with new information
-        const games = [...parseDataSource, ...information];
-        console.log("Games: ", games);
-        // Stringify the games object
-        const data = JSON.stringify(games);
-        const save = fs.writeFile(urlPath, data, 'utf-8', function(error, data) {
+        let parseDataSource = null;
+        if (info.length > 0) parseDataSource = JSON.parse(info);
+        let data = "";
+        if (info.length != 0 && parseDataSource[0].date != formattedDate.split(' ')[0]) {
+            // Update the data source with new information
+            const games = [...parseDataSource, ...information];
+            console.log("Games: ", games);
+            // Stringify the games object
+            data = JSON.stringify(games);
+        }
+
+        if (info.length == 0) {
+            const games = information;
+            console.log("Games [1]: ", games);
+            data = JSON.stringify(games);
+        }
+
+        const save = data && fs.writeFile(urlPath, data, 'utf-8', function(error, data) {
           if (error) throw error;
           console.log("File saved Successfully \n", data);
         });
@@ -39,6 +49,7 @@ export const saveFileData = async (filepath, information) => {
         } catch (error) {
           console.error(error);
         }
+
     } catch (error) {
         console.log(error);
     }

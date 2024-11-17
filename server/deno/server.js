@@ -155,7 +155,18 @@ export const scrapeNBAGameDetails = async (date) => {
         const gameInfo = await page.evaluate(() => {
             // Add selectors for the specific information you want to extract
             // This is just an example - adjust based on the actual page structure
-            const date = document.URL.split("=")[1]
+
+            // Get current date
+            const today = new Date();
+
+            // Get yesterday by subtracting 1 day (in milliseconds)
+            const yesterday = new Date(today);
+            yesterday.setDate(today.getDate() - 1);
+
+            // Format as YYYY-MM-DD (which is what NBA API expects)
+            const formattedDate = yesterday.toLocaleString('sv', { timeZoneName: 'short' });
+
+            const yesterdayDate = formattedDate.split(' ')[0];
             const backgroundImg = document.querySelector(
                 ".GameHeroBackground_bgImage__ay_41"
             );
@@ -220,7 +231,7 @@ export const scrapeNBAGameDetails = async (date) => {
 
             return {
                 _uuid: window.crypto.randomUUID(),
-                date,
+                date: yesterdayDate,
                 title: document.title,
                 url: window.location.href,
                 background_image: backgroundImg?.getAttribute("src"),
