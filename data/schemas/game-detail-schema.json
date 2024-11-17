@@ -1,0 +1,123 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "_uuid": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Unique identifier for the game summary"
+      },
+      "date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date of the game in YYYY-MM-DD format"
+      },
+      "title": {
+        "type": "string",
+        "description": "Title of the game summary"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to the game summary page"
+      },
+      "background_image": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to the background image"
+      },
+      "game_book": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to the game book PDF"
+      },
+      "homeTeam": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Home team abbreviated name"
+          },
+          "lineScores": {
+            "type": "object",
+            "properties": {
+              "fst_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "First quarter score"
+              },
+              "snd_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Second quarter score"
+              },
+              "trd_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Third quarter score"
+              },
+              "fth_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Fourth quarter score"
+              },
+              "final": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Final score"
+              }
+            },
+            "required": ["fst_quarter", "snd_quarter", "trd_quarter", "fth_quarter", "final"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["name", "lineScores"],
+        "additionalProperties": false
+      },
+      "awayTeam": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Away team abbreviated name"
+          },
+          "lineScores": {
+            "type": "object",
+            "properties": {
+              "fst_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "First quarter score"
+              },
+              "snd_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Second quarter score"
+              },
+              "trd_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Third quarter score"
+              },
+              "fth_quarter": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Fourth quarter score"
+              },
+              "final": {
+                "type": "string",
+                "pattern": "^\\d+$",
+                "description": "Final score"
+              }
+            },
+            "required": ["fst_quarter", "snd_quarter", "trd_quarter", "fth_quarter", "final"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["name", "lineScores"],
+        "additionalProperties": false
+      }
+    },
+    "required": ["_uuid", "date", "title", "url", "background_image", "game_book", "homeTeam", "awayTeam"],
+    "additionalProperties": false
+  }
