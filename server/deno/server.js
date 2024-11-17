@@ -1,5 +1,5 @@
 import puppeteer from "npm:puppeteer";
-import { groupByDate } from "../../util/helper.js";
+import { formattedDate, groupByDate } from "../../util/helper.js";
 
 export const scrapeNBAGameStats = async (date) => {
     // Setup Constants for the Scraper
@@ -25,6 +25,7 @@ export const scrapeNBAGameStats = async (date) => {
 
         const gameData = gamesContainer.map((game) => ({
             _uuid: window.crypto.randomUUID(),
+            date: document.URL.split("=")[1],
             homeTeam: game.querySelectorAll(
                 "span.MatchupCardTeamName_teamName__9YaBA"
             )[0].innerHTML,
@@ -117,9 +118,7 @@ export const scrapeNBAGameStats = async (date) => {
 
     await browser.close();
 
-    // Pass the data in the function
-    const results = groupByDate(games);
-    return results;
+    return games;
 };
 
 // Grab all game details from each page
@@ -156,6 +155,18 @@ export const scrapeNBAGameDetails = async (date) => {
         const gameInfo = await page.evaluate(() => {
             // Add selectors for the specific information you want to extract
             // This is just an example - adjust based on the actual page structure
+
+            // Get current date
+            const today = new Date();
+
+            // Get yesterday by subtracting 1 day (in milliseconds)
+            const yesterday = new Date(today);
+            yesterday.setDate(today.getDate() - 1);
+
+            // Format as YYYY-MM-DD (which is what NBA API expects)
+            const formattedDate = yesterday.toLocaleString('sv', { timeZoneName: 'short' });
+
+            const yesterdayDate = formattedDate.split(' ')[0];
             const backgroundImg = document.querySelector(
                 ".GameHeroBackground_bgImage__ay_41"
             );
@@ -220,6 +231,7 @@ export const scrapeNBAGameDetails = async (date) => {
 
             return {
                 _uuid: window.crypto.randomUUID(),
+                date: yesterdayDate,
                 title: document.title,
                 url: window.location.href,
                 background_image: backgroundImg?.getAttribute("src"),
@@ -255,6 +267,6 @@ export const scrapeNBAGameDetails = async (date) => {
     // Pass the data in the function
 
     await browser.close();
-    const results = groupByDate(gameDetails);
-    return results;
+
+    return gameDetails;
 };

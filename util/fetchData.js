@@ -4,6 +4,8 @@ import { formattedDate, saveFileData, FileManager } from "./helper.js"
 
 const date = formattedDate.split(' ')[0];
 
+// Create a range of dates
+
 const results = await scrapeNBAGameStats(date);
 
 const save = saveFileData("data/data-stats-game", results);

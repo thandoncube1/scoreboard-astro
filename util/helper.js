@@ -11,19 +11,48 @@ export function groupByDate(data) {
   }, {});
 }
 // Create a .json file and store it on the path
-export const saveFileData = (filepath, information) => {
+export const saveFileData = async (filepath, information) => {
     const urlPath = `${filepath}.json`;
-    const data = JSON.stringify(information);
-    const save = fs.writeFile(urlPath, data, 'utf-8', function(error, data) {
-            if (error) throw error;
-            console.log("File saved Successfully \n", data);
+
+    // Read the file from path
+    const source = fs.readFile(urlPath, "utf-8", function (err, data) {
+        if (err) throw err;
+        console.log(`Successfully read file: ${urlPath}`, data);
     });
 
-    save.then(result => {
-        console.log("Result: ", result);
-    }).catch(error => {
-        console.error("Error: ", error);
-    });
+    try {
+        const info = await source;
+        let parseDataSource = null;
+        if (info.length > 0) parseDataSource = JSON.parse(info);
+        let data = "";
+        if (info.length != 0 && parseDataSource[0].date != formattedDate.split(' ')[0]) {
+            // Update the data source with new information
+            const games = [...parseDataSource, ...information];
+            console.log("Games: ", games);
+            // Stringify the games object
+            data = JSON.stringify(games);
+        }
+
+        if (info.length == 0) {
+            const games = information;
+            console.log("Games [1]: ", games);
+            data = JSON.stringify(games);
+        }
+
+        const save = data && fs.writeFile(urlPath, data, 'utf-8', function(error, data) {
+          if (error) throw error;
+          console.log("File saved Successfully \n", data);
+        });
+        try {
+          const result = await save;
+          console.log("Successfully saved the result.", result);
+        } catch (error) {
+          console.error(error);
+        }
+
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 export class FileManager {
