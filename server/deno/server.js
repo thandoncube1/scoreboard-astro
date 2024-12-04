@@ -1,5 +1,4 @@
 import puppeteer from "npm:puppeteer";
-import { formattedDate, groupByDate } from "../../util/helper.js";
 
 export const scrapeNBAGameStats = async (date) => {
     // Setup Constants for the Scraper
@@ -229,7 +228,7 @@ export const scrapeNBAGameDetails = async (date) => {
                           ".GameLinescore_table__a1awr > tbody > tr:nth-child(2) > td:nth-child(6)"
                       )[0];
 
-            return {
+            const game = {
                 _uuid: window.crypto.randomUUID(),
                 date: yesterdayDate,
                 title: document.title,
@@ -257,6 +256,8 @@ export const scrapeNBAGameDetails = async (date) => {
                     },
                 },
             };
+            console.log(game);
+            return game;
         });
 
         // Push all game details into the container
@@ -265,7 +266,6 @@ export const scrapeNBAGameDetails = async (date) => {
 
     // console.log(gameDetails);
     // Pass the data in the function
-
     await browser.close();
 
     return gameDetails;
