@@ -15,6 +15,7 @@ export default defineSchema({
   // Table to store individual game details
   games: defineTable({
     gameDayId: v.id('gameDays'), // Reference to the parent gameDay
+    __uuid: v.string(),
     date: v.string(),
     title: v.string(),
     url: v.string(),

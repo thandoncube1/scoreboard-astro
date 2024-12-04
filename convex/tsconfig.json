@@ -21,6 +21,6 @@
         }
     },
     // Update the include pattern to be more specific
-    "include": [".//*.ts", "./src//.tsx", "./src/**/.js", "./src/*/.jsx"],
+    "include": [".//*.ts", "./src//.tsx", "./src/**/.js", "./src/*/.jsx", "./mutations.ts"],
     "exclude": ["./_generated"]
 }
