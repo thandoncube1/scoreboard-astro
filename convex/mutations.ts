@@ -1,5 +1,5 @@
 // mutations.ts
-import { mutation } from "../../convex/_generated/server";
+import { mutation } from "./_generated/server";
 import { v } from "convex/values";
 
 // Mutation to save or update a game day and its games
@@ -8,6 +8,7 @@ export const saveGameDay = mutation({
     date: v.string(),
     games: v.array(
       v.object({
+        _uuid: v.string(),
         title: v.string(),
         url: v.string(),
         backgroundImage: v.optional(v.string()),
