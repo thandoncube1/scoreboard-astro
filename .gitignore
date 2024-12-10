@@ -17,6 +17,7 @@ chrome/
 
 
 # environment variables
+.env
 .env.*
 
 # macOS-specific files

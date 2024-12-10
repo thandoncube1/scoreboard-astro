@@ -1,5 +1,5 @@
 import cron from "npm:node-cron";
-import { saveFileData, formattedDate, FileManager } from "./helper.js";
+import { saveFileData, formattedDate, FileManager } from "./helper.ts";
 // Import the webCrawlers
 import { scrapeNBAGameDetails, scrapeNBAGameStats } from "../server/deno/server.js";
 

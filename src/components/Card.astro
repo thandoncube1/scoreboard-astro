@@ -1,25 +1,31 @@
 ---
-interface LineScores {
-    fst_quarter: string;
-    snd_quarter: string;
-    trd_quarter: string;
-    fth_quarter: string;
-    final: string;
+export interface AstroData {
+  date: string; // e.g., "2024-12-09"
+  collection: GameSummary[]; // Array of game summaries
 }
 
-interface Team {
-    name: string;
-    lineScores: LineScores;
+export interface GameSummary {
+  _uuid: string; // Unique identifier for the game
+  date: string; // Date of the game
+  title: string; // Game title or description
+  url: string; // Link to the game summary
+  background_image: string; // URL to the background image
+  game_book: string; // Link to the game book PDF
+  homeTeam: TeamInfo; // Information about the home team
+  awayTeam: TeamInfo; // Information about the away team
 }
 
-export interface GameDetailsProps {
-    _uuid: string;
-    title: string;
-    url: string;
-    background_image: string;
-    game_book: string;
-    homeTeam: Team;
-    awayTeam: Team;
+export interface TeamInfo {
+  name: string; // Team name abbreviation (e.g., "NYK")
+  lineScores: LineScores; // Quarter-wise and final scores
+}
+
+export interface LineScores {
+  fst_quarter: string; // First quarter score
+  snd_quarter: string; // Second quarter score
+  trd_quarter: string; // Third quarter score
+  fth_quarter: string; // Fourth quarter score
+  final: string; // Final score
 }
 
 const { _uuid, title, url, background_image, game_book, homeTeam, awayTeam } = Astro.props;
