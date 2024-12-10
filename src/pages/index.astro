@@ -11,9 +11,11 @@ import Notification from "../components/Notification.astro";
 import { formattedDate } from "../../util/helper";
 // Get data from the seed file
 import GameDetails from "../../data/data-detail-game.json";
-import type { GameDetailsProps } from "../components/Card.astro";
+import type { AstroData } from "../components/Card.astro";
 
-const GameDetailsList = GameDetails as GameDetailsProps[];
+const GameDetailsList = GameDetails as AstroData[];
+
+const currentDate = formattedDate.split(' ')[0];
 ---
 
 <MainLayout title=`ScoreTracker | Homepage`>
@@ -32,9 +34,11 @@ const GameDetailsList = GameDetails as GameDetailsProps[];
             <section
                 class="px-5 w-full grid gap-3 md:grid-cols-2 md:grid-rows-2 lg:grid lg:grid-cols-3 xl:grid-cols-4"
             >
-                {GameDetailsList.map(details => (
-						<Card {...details} />
-					))}
+                {GameDetailsList.map((details, index) => {
+                    if (details.date === currentDate) {
+                        return <Card {...details.collection[index]} />
+                    }
+				})}
             </section>
 			<h2 class="px-5 mt-2 font-semibold pt-4 text-xl border-b">News</h2>
             <section class="px-5 py-5 mb-20 gap-5 md:grid md:grid-cols-2 md:mb-0 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4">
