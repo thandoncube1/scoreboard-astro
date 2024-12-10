@@ -1,20 +1,55 @@
 import * as dotenv from "@std/dotenv";
+import { z } from "npm:zod";
+
+// Schema Information
+// Define the schema that matches your Convex data structure
+const LineScoresSchema = z.object({
+    fstQuarter: z.string(),
+    sndQuarter: z.string(),
+    trdQuarter: z.string(),
+    fthQuarter: z.string(),
+    final: z.string()
+  });
+
+  const TeamSchema = z.object({
+    name: z.string(),
+    lineScores: LineScoresSchema
+  });
+
+  const GameSchema = z.object({
+    _uuid: z.string(),
+    title: z.string(),
+    url: z.string(),
+    backgroundImage: z.string().optional(),
+    gameBook: z.string().optional(),
+    homeTeam: TeamSchema,
+    awayTeam: TeamSchema
+  });
+
+  const GameDaySchema = z.object({
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // Validates YYYY-MM-DD format
+    games: z.array(GameSchema)
+  });
+
+const ImportSchema = z.array(GameDaySchema);
+
+type ValidatedGameData = z.infer<typeof ImportSchema>;
 
 // Load environment variables
 const env = await dotenv.load();
 const CONVEX_URL = env["CONVEX_URL"] || "";
-const CONVEX_DEPLOY_KEY = env["CONVEX_DEPLOY_KEY"] || "";
+const CONVEX_DEPLOYMENT = env["CONVEX_DEPLOYMENT"] || "";
 
-if (!CONVEX_URL || !CONVEX_DEPLOY_KEY) {
+if (!CONVEX_URL || !CONVEX_DEPLOYMENT) {
   console.error("Please set CONVEX_URL and CONVEX_DEPLOY_KEY in .env file");
   Deno.exit(1);
 }
 
-async function importDataToConvex(jsonFilePath: string) {
+async function importDataToConvex(jsonContent: unknown): Promise<ValidatedGameData> {
   try {
     // Read and parse the JSON file
-    const jsonContent = await Deno.readTextFile(jsonFilePath);
-    const jsonData = JSON.parse(jsonContent);
+    const stringifiedJSON = JSON.stringify(jsonContent);
+    const jsonData = JSON.parse(stringifiedJSON);
 
     // Prepare the mutation request
     const mutation = {
@@ -28,7 +63,7 @@ async function importDataToConvex(jsonFilePath: string) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${CONVEX_DEPLOY_KEY}`,
+        "Authorization": `Bearer ${CONVEX_DEPLOYMENT}`,
       },
       body: JSON.stringify(mutation),
     });
