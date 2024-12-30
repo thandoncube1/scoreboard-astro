@@ -39,12 +39,9 @@ export const saveFileData = async (filepath: string, information: any) => {
       let data = "";
       if (source.length !== 0 && parseDataSource[0].date !== formattedDate) {
           // Update the data source with new information
-          const games = [
-              { date: parseDataSource[0].date, collection: { ...parseDataSource} },
-              { date: formattedDate.split(' ')[0], collection: information }
-          ];
-          console.log("Games: ", games);
-          data = JSON.stringify(games);
+          parseDataSource.push({ date: formattedDate.split(' ')[0], collection: information });
+          console.log("Games: ", parseDataSource);
+          data = JSON.stringify(parseDataSource);
       }
 
       if (source.length === 0) {

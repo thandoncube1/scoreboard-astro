@@ -229,10 +229,10 @@ export const scrapeNBAGameDetails = async (date) => {
                       )[0];
 
             const game = {
-                _uuid: window.crypto.randomUUID(),
+                _uuid: globalThis.crypto.randomUUID(),
                 date: yesterdayDate,
                 title: document.title,
-                url: window.location.href,
+                url: globalThis.location.href,
                 background_image: backgroundImg?.getAttribute("src"),
                 game_book: gameBookPDF?.getAttribute("href"),
                 homeTeam: {

@@ -1,32 +1,60 @@
 [
     {
-        "date": "2024-12-09",
+        "date": "2024-12-10",
         "collection": [
             {
-                "_uuid": "b95ed425-f25f-4514-82be-932b93078aa4",
-                "date": "2024-12-09",
-                "title": "New York Knicks vs Toronto Raptors Dec 9, 2024 Game Summary | NBA.com",
-                "url": "https://www.nba.com/game/nyk-vs-tor-0022400359",
+                "_uuid": "d2a47ecb-0001-49b0-aefb-196d053176dd",
+                "date": "2024-12-10",
+                "title": "Golden State Warriors vs Houston Rockets Dec 11, 2024 Game Summary | NBA.com",
+                "url": "https://www.nba.com/game/gsw-vs-hou-0022401204",
                 "background_image": "https://cdn.nba.com/next/fallback.jpg",
-                "game_book": "https://statsdmz.nba.com/pdfs/20241209/20241209_NYKTOR_book.pdf",
+                "game_book": "https://statsdmz.nba.com/pdfs/20241211/20241211_GSWHOU_book.pdf",
                 "homeTeam": {
-                    "name": "NYK",
+                    "name": "GSW",
                     "lineScores": {
-                        "fst_quarter": "34",
-                        "snd_quarter": "26",
-                        "trd_quarter": "23",
-                        "fth_quarter": "30",
-                        "final": "113"
+                        "fst_quarter": "18",
+                        "snd_quarter": "13",
+                        "trd_quarter": "0",
+                        "fth_quarter": "0",
+                        "final": "31"
                     }
                 },
                 "awayTeam": {
-                    "name": "TOR",
+                    "name": "HOU",
                     "lineScores": {
-                        "fst_quarter": "27",
-                        "snd_quarter": "34",
-                        "trd_quarter": "25",
-                        "fth_quarter": "22",
+                        "fst_quarter": "20",
+                        "snd_quarter": "20",
+                        "trd_quarter": "0",
+                        "fth_quarter": "0",
+                        "final": "40"
+                    }
+                }
+            },
+            {
+                "_uuid": "8ef78dc3-27f9-4c63-a75d-1ff90424b23b",
+                "date": "2024-12-10",
+                "title": "Atlanta Hawks vs New York Knicks Dec 11, 2024 Game Summary | NBA.com",
+                "url": "https://www.nba.com/game/atl-vs-nyk-0022401202",
+                "background_image": "https://cdn.nba.com/next/fallback.jpg",
+                "game_book": "https://statsdmz.nba.com/pdfs/20241211/20241211_ATLNYK_book.pdf",
+                "homeTeam": {
+                    "name": "ATL",
+                    "lineScores": {
+                        "fst_quarter": "22",
+                        "snd_quarter": "25",
+                        "trd_quarter": "34",
+                        "fth_quarter": "27",
                         "final": "108"
+                    }
+                },
+                "awayTeam": {
+                    "name": "NYK",
+                    "lineScores": {
+                        "fst_quarter": "28",
+                        "snd_quarter": "26",
+                        "trd_quarter": "18",
+                        "fth_quarter": "28",
+                        "final": "100"
                     }
                 }
             }
