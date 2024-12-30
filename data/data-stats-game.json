@@ -1,1 +1,141 @@
-[{"date":"2024-12-09","collection":[{"_uuid":"c71df062-da11-4f61-88de-4f5104f82e48","date":"2024-12-09","homeTeam":"Knicks","awayTeam":"Raptors","home":{"team":"Knicks","teamLogo":"https://cdn.nba.com/logos/nba/fallback.svg","final":"113","gameLeader":{"name":"Karl-Anthony Towns","playerInfo":"NYK | #32 | C","image":{"src":"https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png","alt":"Default player headshot"},"leaderStats":{"pts":"24","reb":"15","ast":"6"}}},"away":{"team":"Raptors","teamLogo":"https://cdn.nba.com/logos/nba/fallback.svg","final":"108","gameLeader":{"name":"RJ Barrett","playerInfo":"TOR | #9 | SF","image":{"src":"https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png","alt":"Default player headshot"},"leaderStats":{"pts":"30","reb":"8","ast":"4"}}},"article":"/game/nyk-vs-tor-0022400359"}]}]
+[
+    {
+        "date": "2024-12-09",
+        "collection": [
+            {
+                "_uuid": "c71df062-da11-4f61-88de-4f5104f82e48",
+                "date": "2024-12-09",
+                "homeTeam": "Knicks",
+                "awayTeam": "Raptors",
+                "home": {
+                    "team": "Knicks",
+                    "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                    "final": "113",
+                    "gameLeader": {
+                        "name": "Karl-Anthony Towns",
+                        "playerInfo": "NYK | #32 | C",
+                        "image": {
+                            "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                            "alt": "Default player headshot"
+                        },
+                        "leaderStats": {
+                            "pts": "24",
+                            "reb": "15",
+                            "ast": "6"
+                        }
+                    }
+                },
+                "away": {
+                    "team": "Raptors",
+                    "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                    "final": "108",
+                    "gameLeader": {
+                        "name": "RJ Barrett",
+                        "playerInfo": "TOR | #9 | SF",
+                        "image": {
+                            "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                            "alt": "Default player headshot"
+                        },
+                        "leaderStats": {
+                            "pts": "30",
+                            "reb": "8",
+                            "ast": "4"
+                        }
+                    }
+                },
+                "article": "/game/nyk-vs-tor-0022400359"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-11",
+        "collection": [
+            {
+                "_uuid": "a170004a-6160-4023-b6cb-654e19e917f9",
+                "date": "2024-12-11",
+                "homeTeam": "Warriors",
+                "awayTeam": "Rockets",
+                "home": {
+                    "team": "Warriors",
+                    "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                    "final": "37",
+                    "gameLeader": {
+                        "name": "Stephen Curry",
+                        "playerInfo": "GSW | #30 | PG",
+                        "image": {
+                            "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                            "alt": "Default player headshot"
+                        },
+                        "leaderStats": {
+                            "pts": "10",
+                            "reb": "2",
+                            "ast": "4"
+                        }
+                    }
+                },
+                "away": {
+                    "team": "Rockets",
+                    "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                    "final": "44",
+                    "gameLeader": {
+                        "name": "Alperen Sengun",
+                        "playerInfo": "HOU | #28 | C",
+                        "image": {
+                            "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                            "alt": "Default player headshot"
+                        },
+                        "leaderStats": {
+                            "pts": "14",
+                            "reb": "8",
+                            "ast": "2"
+                        }
+                    }
+                },
+                "article": "/game/gsw-vs-hou-0022401204"
+            },
+            {
+                "_uuid": "e45cd098-7a4d-4ce6-83c7-aeec0cb9b464",
+                "date": "2024-12-11",
+                "homeTeam": "Hawks",
+                "awayTeam": "Knicks",
+                "home": {
+                    "team": "Hawks",
+                    "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                    "final": "108",
+                    "gameLeader": {
+                        "name": "Jalen Johnson",
+                        "playerInfo": "ATL | #1 | SF",
+                        "image": {
+                            "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                            "alt": "Default player headshot"
+                        },
+                        "leaderStats": {
+                            "pts": "21",
+                            "reb": "15",
+                            "ast": "7"
+                        }
+                    }
+                },
+                "away": {
+                    "team": "Knicks",
+                    "teamLogo": "https://cdn.nba.com/logos/nba/fallback.svg",
+                    "final": "100",
+                    "gameLeader": {
+                        "name": "Karl-Anthony Towns",
+                        "playerInfo": "NYK | #32 | C",
+                        "image": {
+                            "src": "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png",
+                            "alt": "Default player headshot"
+                        },
+                        "leaderStats": {
+                            "pts": "19",
+                            "reb": "19",
+                            "ast": "5"
+                        }
+                    }
+                },
+                "article": "/game/atl-vs-nyk-0022401202"
+            }
+        ]
+    }
+]
